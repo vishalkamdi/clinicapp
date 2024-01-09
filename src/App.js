@@ -7,6 +7,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Service from './components/Service';
+import Login from './components/Login';
+import Register from './components/Register';
 
 
 
@@ -21,6 +23,8 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/service" element={<Service />} />
       <Route path="/Home" element={<Home/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/register" element={<Register/>} />
 
 
     </Routes>

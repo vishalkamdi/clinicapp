@@ -32,6 +32,9 @@ export default function Nav(){
                                                 </ul>
                                             </li> */}
                                             <li><Link to="contact">Contact</Link></li>
+                                            <li><Link to="Register">Register</Link></li>
+                                            <li><Link to="Login">Login</Link></li>
+
                                         </ul>
                                     </nav>
                                 </div>
