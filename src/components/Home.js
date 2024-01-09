@@ -6,7 +6,7 @@ export default function Home(){
         <div className="slider-area">
             <div className="slider-active dot-style">
        
-                <div className="single-slider d-flex align-items-center slider-height">
+                {/* <div className="single-slider d-flex align-items-center slider-height">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-xl-7 col-lg-8 col-md-10 ">
@@ -26,7 +26,7 @@ export default function Home(){
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>     */}
          
             <div className="single-slider d-flex align-items-center slider-height">
                 <div className="container">
