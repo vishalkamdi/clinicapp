@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux"
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux"
+import { authReducer } from "../reduxData/AuthSlice"
 export default function Nav() {
 
     const user = useSelector(state => state.authInfo.value)
+    const dispatch = useDispatch()
+    const navigate =useNavigate();
+    const Logout =()=>{
+        dispatch(authReducer({token:undefined,name:undefined, type:undefined,isLogin:false}))
+        navigate("/")
+    }
     return <>
 
         <header>
@@ -27,9 +34,9 @@ export default function Nav() {
                                                     <>
                                                         {user.type == "doctor" ? <>
                                                             <li> <Link to="home">Home</Link></li>
-                                                            <li> <Link to="home">New Clinic</Link></li>
-                                                            <li> <Link to="home">AllClinics</Link></li>
-                                                            <li> <Link to="home">Appointments</Link></li>
+                                                            <li> <Link to="newclinic">New Clinic</Link></li>
+                                                            <li> <Link to="allclinics">AllClinics</Link></li>
+                                                            <li> <Link to="Appointments">Appointments</Link></li>
                                                         </> : ""}
 
                                                         {user.type == "reception" ? <> </> : ""}
@@ -57,9 +64,11 @@ export default function Nav() {
                                         </nav>
                                     </div>
                                     {user.isLogin ? <><div className="header-right-btn f-right d-none d-lg-block ml-15">
-                                        <Link to="/" className="btn header-btn">Logout</Link>
+                                        <button onClick={Logout} className="btn header-btn">Logout</button>
+                                       
                                     </div></> : <>
                                         <div className="header-right-btn f-right d-none d-lg-block ml-15">
+                                        
                                             <Link to="/" className="btn header-btn">Make an Appointment</Link>
                                         </div></>}
 
