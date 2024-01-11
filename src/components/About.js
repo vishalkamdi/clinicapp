@@ -19,9 +19,7 @@ export default function About(){
                         life you love!</h2>
                     </div>
                     <p className="pera-top mb-40">Almost before we knew it, we had left the ground</p>
-                    <p className="pera-bottom mb-30">Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
-                        dignissim dolor, a pretium mi sem ut ipsum. Fusce
-                    fermentum. Pellentesque libero tortor, tincidunt et.</p>
+                    <p className="pera-bottom mb-30">Time and health are two precious assets that we don’t recognize and appreciate until they have been depleted..</p>
                     <div className="icon-about">
                      <img src="assets/img/icon/about1.svg" alt="" className=" mr-20" />
                      <img src="assets/img/icon/about2.svg" alt="" />

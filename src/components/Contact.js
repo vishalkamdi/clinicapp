@@ -8,7 +8,7 @@ export default function Contact(){
                 <h2 className="contact-title">Get in Touch</h2>
             </div>
             <div className="col-lg-8">
-                <form className="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                <form className="form-contact contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
                     <div className="row">
                         <div className="col-12">
                             <div className="form-group">
