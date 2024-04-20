@@ -75,7 +75,7 @@ export default function Footer(){
                         <div className="col-xl-10 ">
                             <div className="footer-copy-right">
                              <p>
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="fa fa-heart" aria-hidden="true"></i> by <a to="https://colorlib.com" target="_blank">Colorlib</a>
+                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i className="fa fa-heart" aria-hidden="true"></i> by <a to="#" >Vishal</a>
                              </p>
                           </div>
                       </div>
